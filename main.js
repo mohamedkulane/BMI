@@ -8,11 +8,11 @@ calcBtn.addEventListener("click",()=>{
     const height = parseFloat(heightInput.value);
     const bmi = weight / (height * height);
      if (bmi < 16) {
-          resultBox.textContent = "Underweight";
+          resultBox.textContent = ("BMI waa:"+ " " +bmi.toFixed(1) +" Under weight");
     } else if (bmi < 28) {
       resultBox.textContent = ("BMI waa:"+ " " +bmi.toFixed(1) +" Normal");
     } else {
-          resultBox.textContent = "Overweight";
+          resultBox.textContent = ("BMI waa:"+ " " +bmi.toFixed(1) +" Over weight");
         }
     resultBox.classList.add("text-green-600");
 })
